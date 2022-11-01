@@ -1,15 +1,67 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import DidMount from "./didMount";
+import WillUpdate from "./willUpdate";
+import DidUpdate from "./didUpdate";
+import reportWebVitals from "./reportWebVitals";
+import WillUnmount from "./willUnmount";
+import Form from "./BMI/form";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    {/* <DidMount />
+    <WillUpdate />
+    <DidUpdate />
+    <WillUnmount /> */}
+    <Form />
   </React.StrictMode>
 );
+
+// class Car extends React.Component {
+//   render() {
+//     return <h2>Hi, I am a Car!</h2>;
+//   }
+// }
+
+// root.render(<Car />, document.getElementById('root'));
+
+// state & setState
+// class Car extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       brand: "Ford",
+//       model: "Mustang",
+//       color: "red",
+//       year: 1964
+//     };
+//   }
+//   changeColor = () => {
+//     this.setState({color: "Green"});
+//   }
+//   render() {
+//     return (
+//       <div>
+//         <h1>My {this.state.brand}</h1>
+//         <p>
+//           It is a {this.state.color}
+//           {this.state.model}
+//           from {this.state.year}.
+//         </p>
+//         <button
+//           type="button"
+//           onClick={this.changeColor}
+//         >Change color</button>
+//       </div>
+//     );
+//   }
+// }
+
+// root.render(<Car />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
