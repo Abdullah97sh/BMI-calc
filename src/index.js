@@ -7,17 +7,30 @@ import WillUpdate from "./willUpdate";
 import DidUpdate from "./didUpdate";
 import reportWebVitals from "./reportWebVitals";
 import WillUnmount from "./willUnmount";
-import Form from "./BMI/form";
+// import Form from "./BMI/form";   // BMI Class
+import Form from "./BMI_function/Form";  // BMI_function
+import Mapping from "./MAP/mapping";
+import Filter from "./MAP/filter";
+import Use_State from "./MAP/use_State";
+import UnstyledTable from "./MAP/pagination";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
+
     {/* <DidMount />
     <WillUpdate />
     <DidUpdate />
     <WillUnmount /> */}
+
     <Form />
+
+    {/* <UnstyledTable/> */}
+
+    {/* <Mapping />
+    <Filter />
+    <Use_State /> */}
   </React.StrictMode>
 );
 
